@@ -20,7 +20,7 @@ function distanceDuree(util,res) {
             result.data.start.country = countryStart[countryStart.length - 1]
 
             //END
-            let dataLocation2 = response.data.origin_addresses
+            let dataLocation2 = response.data.destination_addresses
             let location2 = dataLocation2[0]
             let countryStart2 = location2.split(",")
             // console.log(tab[tab.length - 1])

@@ -1,8 +1,9 @@
 const axios = require('axios')
 const result = require('../utils/result')
+const apiKey = require('../env/key')
 
 function distanceDuree(util,res) {
-    url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+util.latitudeStart+","+util.longitudeStart+"&destinations=side_of_road:"+util.latitudeEnd+","+util.longitudeEnd+"&key=AIzaSyBrRh0NjtrSopoOrG-4_W3OP0nmzSDQK-M"
+    url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+util.latitudeStart+","+util.longitudeStart+"&destinations=side_of_road:"+util.latitudeEnd+","+util.longitudeEnd+"&key="+apiKey
     axios.get(url)
         .then((response) => {
             result.data.start.location = {"lat": util.latitudeStart, "lng": util.longitudeStart}
@@ -38,7 +39,7 @@ function distanceDuree(util,res) {
 
 
 function timezone(latitude, longitude, res, position, util) {
-    let url = 'https://maps.googleapis.com/maps/api/timezone/json?location=' + latitude + ',' + longitude + '&timestamp=1458000000&key=AIzaSyBrRh0NjtrSopoOrG-4_W3OP0nmzSDQK-M'
+    let url = "https://maps.googleapis.com/maps/api/timezone/json?location=" + latitude + "," + longitude + "&timestamp=1458000000&key="+apiKey
     axios.get(url)
         .then((response) => {
             if (position == 0) {

@@ -1,4 +1,4 @@
-key = 'AIzaSyBrRh0NjtrSopoOrG-4_W3OP0nmzSDQK-M'
+
 
 class property{
     _latitudeStart = null

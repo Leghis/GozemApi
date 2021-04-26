@@ -1,7 +1,6 @@
 const express = require('express') ;
 const app = express() ;
-const request = require('request')
-const dataRouter = require('./routes/data')
+const dataRouter = require('./routes/router')
 
 
 app.use(express.json())

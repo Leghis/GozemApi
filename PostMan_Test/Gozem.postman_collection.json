@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "c0ced0b7-02fd-49c6-a401-57d3edb47b87",
+		"name": "Gozem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GozemApi_France_espagne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"start\": { \"lat\": \"46.5306014372175\", \"lng\": \"1.5988105937499597\" },\r\n\"end\": { \"lat\": \"41.308997012913466\", \"lng\": \"-2.488175639792942\" },\r\n\"units\": \"metric\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/get_distance_and_time",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get_distance_and_time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GozemApi_cameroun_route",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"start\": { \"lat\": \"46.5306014372175\", \"lng\": \"1.5988105937499597\" },\r\n\"end\": { \"lat\": \"41.308997012913466\", \"lng\": \"-2.488175639792942\" },\r\n\"units\": \"metric\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/get_distance_and_time",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get_distance_and_time"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
